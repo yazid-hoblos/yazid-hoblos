@@ -1,16 +1,32 @@
-### Hi there 👋
+# Hello, I'm Yazid! 👋
 
-<!--
-**yazid-hoblos/yazid-hoblos** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a Bioinformatician and Data Science Enthusiast.
 
-Here are some ideas to get you started:
+## 🛠️ My Skills
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Programming languages: Python, R, JAVA, SQL, Bash, Perl
+- Databases: MySQL, POSTGRES
+- Tools: Visual Studio
+
+## 📫 How to reach me
+
+You can connect with me on:
+
+- LinkedIn: www.linkedin.com/in/yazid-hoblos-314159265359pi
+- Email: yazidhoblos4@gmail.com
+
+I'm always open to interesting conversations and collaboration.
+
+## 📚 What I'm currently learning
+
+I'm currently improving my skills in Topological Data Analysis and learning more about Multi-omics Analysis.
+
+## 🌱 What I'm interested in
+
+- Philosophy, Psychology
+
+## 📈 My GitHub Stats
+
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yazid-hoblos&show_icons=true)
+
+
