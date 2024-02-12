@@ -31,6 +31,6 @@ I'm currently improving my skills in Topological Data Analysis and learning more
 
 ## 📊 My GitHub Language Contribution
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight&hide=html)
 
 
