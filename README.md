@@ -27,7 +27,7 @@ I'm currently improving my skills in Topological Data Analysis and learning more
 
 ## 📈 My GitHub Stats
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yazid-hoblos&show_icons=true&cache_buster=1)
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&cache_buster=1)
 
 ## 📊 My GitHub Language Contribution
 
