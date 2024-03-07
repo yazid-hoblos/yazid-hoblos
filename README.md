@@ -6,7 +6,7 @@ I'm a Bioinformatician and Data Science Enthusiast.
 
 - Programming languages: Python, R, JAVA, SQL, Bash, Perl
 - Databases: MySQL, POSTGRES
-- Tools: Visual Studio
+- Tools: Visual Studio, RStudio, Eclipse
 
 ## 📫 How to reach me
 
