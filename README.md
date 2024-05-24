@@ -1,6 +1,6 @@
 # Hello, I'm Yazid! 👋
 
-I'm a Bioinformatician and Data Science Enthusiast.
+I'm a Bioinformatician with a passion for interdisciplinary biological research.
 
 ## 🛠️ My Skills
 
@@ -12,14 +12,14 @@ I'm a Bioinformatician and Data Science Enthusiast.
 
 You can connect with me on:
 
-- LinkedIn: www.linkedin.com/in/yazid-hoblos-314159265359pi
+- LinkedIn: www.linkedin.com/in/yazid-hoblos
 - Email: yazidhoblos4@gmail.com
 
 I'm always open to interesting conversations and collaboration.
 
 ## 📚 What I'm currently learning
 
-I'm currently improving my skills in Topological Data Analysis and learning more about Multi-omics Analysis.
+I'm currently attempting to learn more about Multi-Omics Analysis.
 
 ## 🌱 What I'm interested in
 
