@@ -6,24 +6,19 @@ I'm a Bioinformatician with a passion for interdisciplinary biological research.
 
 - Programming languages: Python, R, JAVA, SQL, Bash, Perl
 - Databases: MySQL, POSTGRES
-- Tools: Visual Studio, RStudio, Eclipse
 
 ## 📫 How to reach me
 
 You can connect with me on:
 
 - LinkedIn: www.linkedin.com/in/yazid-hoblos
-- Email: yazidhoblos4@gmail.com
+- Email: yazidhoblos5@gmail.com
 
 I'm always open to interesting conversations and collaboration.
 
 ## 📚 What I'm currently learning
 
 I'm currently attempting to learn more about Multi-Omics Analysis.
-
-## 🌱 What I'm interested in
-
-- Philosophy, Psychology
 
 ## 📈 My GitHub Stats
 
