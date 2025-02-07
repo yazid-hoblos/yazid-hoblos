@@ -1,6 +1,8 @@
 # Hello, I'm Yazid! 👋
 
-I'm a Bioinformatician with a passion for interdisciplinary biological research.
+I am a bioinformatician with a passion for systems biology applications. I am currently pursuing an M1 in Genomics at Université Evry Paris-Saclay, and I hold a BS in Bioinformatics with a minor in Mathematics from the Lebanese American University. 
+
+My research experiences lie primarily in network biology, AI/ML in bioinformatics, and omics data processing, integration, and analysis.
 
 ## 🛠️ My Skills
 
