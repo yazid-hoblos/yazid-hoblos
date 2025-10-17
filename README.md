@@ -14,15 +14,19 @@ My research experiences lie primarily in network biology, ML in bioinformatics, 
 
 ## 🛠️ My Skills
 
-- Programming languages: Python, R, JAVA, SQL, Bash, Perl
-- Databases: MySQL, POSTGRES
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) 
+![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=flat-square) 
+![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat-square) 
+![Bash](https://img.shields.io/badge/-Bash-333333?logo=gnu-bash&logoColor=white&style=flat-square) 
+![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white&style=flat-square)
+![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white&style=flat-square) 
 
-## 📫 How to reach me
+## 📫 How to Reach me
 
 You can connect with me on [LinkedIn](www.linkedin.com/in/yazid-hoblos) or reach out to my [email](yazidhoblos5@gmail.com).
 I'm always open to interesting conversations and collaborations.
 
-# Recent Contributions
+## Recent Contributions
 
 I recently contributed to [PANORAMA](https://github.com/labgem/PANORAMA) as part of my M1 internship at LABGeM, Genoscope-CEA.
 
