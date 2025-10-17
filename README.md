@@ -4,11 +4,6 @@ I am a bioinformatician with a passion for systems biology applications. I am cu
 
 My research experiences lie primarily in network biology, ML in bioinformatics, and omics integrative analysis.
 
-## 🛠️ My Skills
-
-- Programming languages: Python, R, JAVA, SQL, Bash, Perl
-- Databases: MySQL, POSTGRES
-
 ## 📈 My GitHub Stats
 
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&cache_buster=1)
@@ -17,13 +12,14 @@ My research experiences lie primarily in network biology, ML in bioinformatics, 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight&hide=html&cache_buster=1)
 
+## 🛠️ My Skills
+
+- Programming languages: Python, R, JAVA, SQL, Bash, Perl
+- Databases: MySQL, POSTGRES
+
 ## 📫 How to reach me
 
-You can connect with me on:
-
-- LinkedIn: www.linkedin.com/in/yazid-hoblos
-- Email: yazidhoblos5@gmail.com
-
+You can connect with me on [LinkedIn](www.linkedin.com/in/yazid-hoblos) or reach out to my [email](yazidhoblos5@gmail.com).
 I'm always open to interesting conversations and collaborations.
 
 # Recent Contributions
