@@ -23,7 +23,7 @@ My research experiences lie primarily in network biology, ML in bioinformatics, 
 
 ## 📫 How to Reach me
 
-You can connect with me on [LinkedIn](www.linkedin.com/in/yazid-hoblos) or reach out to my [email](yazidhoblos5@gmail.com).
+You can connect with me on [LinkedIn](https://www.linkedin.com/in/yazid-hoblos) or reach out to my [email](mailto:yazidhoblos5@gmail.com).
 I'm always open to interesting conversations and collaborations.
 
 ## Recent Contributions
