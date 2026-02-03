@@ -24,5 +24,4 @@ LinkedIn: [linkedin.com/in/yazid-hoblos](https://www.linkedin.com/in/yazid-hoblo
 
 <div align="center">
 	<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
-	<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight&hide=html&layout=compact&hide_border=true" alt="Top Languages"/>
 </div>
