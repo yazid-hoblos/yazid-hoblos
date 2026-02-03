@@ -1,34 +1,38 @@
-# Hello, I'm Yazid! 👋
 
-I am a bioinformatician with a passion for systems biology applications. I am currently pursuing a Master's in Genomics at **Université Evry Paris-Saclay**, and I hold a BS in Bioinformatics with a minor in Mathematics from the **Lebanese American University**. 
 
-My research experiences lie primarily in network biology, ML in bioinformatics, and omics integrative analysis.
+<div align="center">
+	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=1A1A1A&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Yazid+%F0%9F%91%8B;Bioinformatician+%7C+Systems+Biology+Enthusiast;Open+Source+%7C+ML+in+Bioinformatics" alt="Typing SVG"/>
+</div>
 
-## 📈 My GitHub Stats
+<p align="center">
+	<img src="https://skillicons.dev/icons?i=python,r,java,bash,perl,sqlite" alt="Skills"/>
+</p>
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&cache_buster=1)
+<p align="center">
+	<img src="https://github-readme-streak-stats.herokuapp.com/?user=yazid-hoblos&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</p>
 
-## 📊 My GitHub Language Contribution
+<div align="center">
+	<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
+	<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight&hide=html&layout=compact&hide_border=true" alt="Top Languages"/>
+</div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yazid-hoblos&theme=tokyonight&hide=html&cache_buster=1)
+---
 
-## 🛠️ My Skills
+## About Me
 
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square) 
-![R](https://img.shields.io/badge/-R-276DC3?logo=r&logoColor=white&style=flat-square) 
-![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat-square) 
-![Bash](https://img.shields.io/badge/-Bash-333333?logo=gnu-bash&logoColor=white&style=flat-square) 
-![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white&style=flat-square)
-![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white&style=flat-square) 
-
-## 📫 How to Reach me
-
-You can connect with me on [LinkedIn](https://www.linkedin.com/in/yazid-hoblos) or reach out to my [email](mailto:yazidhoblos5@gmail.com).
-I'm always open to interesting conversations and collaborations.
+Bioinformatician with a passion for systems biology applications.
+🎓 Master's in Genomics @ **Université Paris-Saclay**  
+🎓 BS in Bioinformatics, Minor in Mathematics @ **Lebanese American University**  
+🔬 Research: Network biology, ML in bioinformatics, omics integrative analysis
 
 ## Recent Contributions
 
-I recently contributed to [PANORAMA](https://github.com/labgem/PANORAMA) as part of my M1 internship at LABGeM, Genoscope-CEA.
+• Contributed to [PANORAMA](https://github.com/labgem/PANORAMA) (M1 internship, LABGeM, Genoscope-CEA)  
+• Leading software for iGEM **Evry Paris-Saclay Team** [![View on GitLab](https://img.shields.io/badge/View_on-GitLab-orange?logo=gitlab)](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay)
 
-I am currently leading the work on the software component of the iGEM **Evry Paris-Saclay Team**, hosted on iGEM GitLab. [![View on GitLab](https://img.shields.io/badge/View_on-GitLab-orange?logo=gitlab)](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay)
+## Contact
+
+Email: [yazidhoblos5@gmail.com](mailto:yazidhoblos5@gmail.com)  
+LinkedIn: [linkedin.com/in/yazid-hoblos](https://www.linkedin.com/in/yazid-hoblos)
 
