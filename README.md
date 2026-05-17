@@ -12,7 +12,27 @@ Bioinformatician with a passion for systems biology applications and computation
 - Method & pipeline development 
 - AI & omics data analysis
 
-## Research 
+## Skills
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,r,java,bash,perl,git,docker" alt="Skills"/>
+  <img src="assets/nextflow.png" alt="Nextflow" height="48" style="background: white;"/>
+</p>
+
+<div align="center">
+	<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
+</div>
+
+<div align="center">
+	<img src="https://github-readme-streak-stats.herokuapp.com/?user=yazid-hoblos&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</div>
+
+<!-- <div align="center">
+	<img src="https://github-readme-activity-graph.vercel.app/graph?username=yazid-hoblos&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
+</div> -->
+
+
+## Key Projects 
 
 ### Systems & Network Biology
 - **[DiseaseNetAnalysis](https://github.com/yazid-hoblos/DiseaseNetAnalysis)** – Applied network science principles to study diseasome topology and communities
@@ -35,26 +55,6 @@ Bioinformatician with a passion for systems biology applications and computation
 - **[Carcinoma-Prediction](https://github.com/yazid-hoblos/Carcinoma-Prediction)** – Transcriptomics-based carcinoma detection using supervised, unsupervised, and tree-based ML
 - **[CustomNeuralNetwork](https://github.com/yazid-hoblos/CustomNeuralNetwork)** – Customizable Neural Network implementation from scratch
 - **[GNN-Sepsis](https://github.com/yazid-hoblos/GNN-Sepsis)** – Graph neural networks for multi-omics data integration, sepsis prediction, and interpretability assessment
-
-## Skills
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,r,java,bash,perl,git,docker" alt="Skills"/>
-  <img src="assets/nextflow.png" alt="Nextflow" height="48" style="background: white;"/>
-</p>
-
-<div align="center">
-	<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
-</div>
-
-<div align="center">
-	<img src="https://github-readme-streak-stats.herokuapp.com/?user=yazid-hoblos&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</div>
-
-<!-- <div align="center">
-	<img src="https://github-readme-activity-graph.vercel.app/graph?username=yazid-hoblos&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
-</div> -->
-
 
 ## Get in Touch
 
