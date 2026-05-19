@@ -2,22 +2,24 @@
 
 Bioinformatician with a passion for systems biology applications and computational genomics.
 
-**Education**
-- Master's in Genomics @ **Université Paris-Saclay**
-- BS in Bioinformatics, Minor in Mathematics @ **Lebanese American University**
+### Education
+- MS in Genomics @**Université Paris-Saclay**
+- BS in Bioinformatics, Minor in Mathematics @**Lebanese American University**
 
-**Research Interests**
+### Research Interests
 - Network & systems biology
 - Comparative genomics & pangenomics
 - Method & pipeline development 
 - AI & omics data analysis
 
-## Skills
+### Skills
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,r,java,bash,perl,git,docker" alt="Skills"/>
   <img src="assets/nextflow.png" alt="Nextflow" height="48" style="background: white;"/>
 </p>
+
+---
 
 <div align="center">
 	<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=yazid-hoblos&hide=prs,issues&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats"/>
@@ -30,7 +32,7 @@ Bioinformatician with a passion for systems biology applications and computation
 <!-- <div align="center">
 	<img src="https://github-readme-activity-graph.vercel.app/graph?username=yazid-hoblos&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
 </div> -->
-
+---
 
 ## Key Projects 
 
@@ -45,7 +47,7 @@ Bioinformatician with a passion for systems biology applications and computation
 - **[PULkit](https://github.com/labgem/PULkit)** – Novel rule-based annotation models for Polysaccharide Utilization Loci (PUL)
 - **[CompGenPipeline](https://github.com/yazid-hoblos/CompGenPipeline)** – Comparative genomics pipelines for automated gene duplication and TE analysis
 
-### Bioinformatic Pipelines & Tool Development
+### Bioinformatic Pipeline & Tool Development
 - **[WES-Processing](https://github.com/yazid-hoblos/WES-Processing)** – Processing and analysis pipeline for WES data from Lebanese patients with rare disorders [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink)](https://doi.org/10.1371/journal.pone.0327471) 
 - **[RNA-Toolkit](https://github.com/yazid-hoblos/RNA-Toolkit)** – RNA modeling and analysis features
 - **[RNA-Fold](https://github.com/yazid-hoblos/RNA-Fold)** – RNA folding evaluation and analysis library
@@ -61,4 +63,4 @@ Bioinformatician with a passion for systems biology applications and computation
 **Email:** [yazidhoblos5@gmail.com](mailto:yazidhoblos5@gmail.com)  
 **LinkedIn:** [linkedin.com/in/yazid-hoblos](https://www.linkedin.com/in/yazid-hoblos)
 
-**Open to collaboration on bioinformatics projects, genomics research, and computational biology initiatives!**
+*Open to collaboration on bioinformatics projects, genomics research, and computational biology initiatives!*
