@@ -1,24 +1,14 @@
 ### <p align="center">Hello, I'm Yazid</p>
 
 <p align="center">
-  <a href="https://github.com/yazid-hoblos?tab=followers">
-    <img alt="followers" title="Follow me on GitHub" src="https://custom-icon-badges.demolab.com/github/followers/yazid-hoblos?color=2DD4BF&labelColor=1A1B35&style=for-the-badge&logo=person-add&label=Follow&logoColor=2DD4BF" />
-  </a>
-  <a href="https://github.com/yazid-hoblos?tab=repositories">
-    <img alt="repositories" title="View my repositories" src="https://img.shields.io/badge/Projects-2DD4BF?style=for-the-badge&logo=github&logoColor=2DD4BF&labelColor=1A1B35" />
-  </a>
+  <a href="https://github.com/yazid-hoblos?tab=followers"><img alt="followers" title="Follow me on GitHub" src="https://custom-icon-badges.demolab.com/github/followers/yazid-hoblos?color=2DD4BF&labelColor=1A1B35&style=for-the-badge&logo=person-add&label=Follow&logoColor=2DD4BF" /></a>
+  <a href="https://github.com/yazid-hoblos?tab=repositories"><img alt="repositories" title="View my repositories" src="https://img.shields.io/badge/Projects-2DD4BF?style=for-the-badge&logo=github&logoColor=2DD4BF&labelColor=1A1B35" /></a>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/yazid-hoblos">
-    <img alt="LinkedIn" title="LinkedIn" src="assets/linkedin-badge.svg" />
-  </a>
-  <a href="mailto:yazidhoblos5@gmail.com">
-    <img alt="Gmail" title="Gmail" src="https://img.shields.io/static/v1?label=%20&message=yazidhoblos5%40gmail.com&color=F8B4AE&labelColor=EA4330&style=flat-square&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://orcid.org/0009-0002-3991-0098">
-    <img alt="ORCID" title="ORCID" src="https://img.shields.io/static/v1?label=%20&message=0009-0002-3991-0098&color=DDF4A2&labelColor=A6CE00&style=flat-square&logo=orcid&logoColor=white" />
-  </a>
+  <a href="https://www.linkedin.com/in/yazid-hoblos"><img alt="LinkedIn" title="LinkedIn" src="assets/linkedin-badge.svg" /></a>
+  <a href="mailto:yazidhoblos5@gmail.com"><img alt="Gmail" title="Gmail" src="https://img.shields.io/static/v1?label=%20&message=yazidhoblos5%40gmail.com&color=F8B4AE&labelColor=EA4330&style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://orcid.org/0009-0002-3991-0098"><img alt="ORCID" title="ORCID" src="https://img.shields.io/static/v1?label=%20&message=0009-0002-3991-0098&color=DDF4A2&labelColor=A6CE00&style=flat-square&logo=orcid&logoColor=white" /></a>
 </p>
 
 🎓 M.S. in Genomics at **Université Paris-Saclay**  
