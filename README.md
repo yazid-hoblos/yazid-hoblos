@@ -11,8 +11,8 @@
   <a href="https://orcid.org/0009-0002-3991-0098"><img alt="ORCID" title="ORCID" src="https://img.shields.io/static/v1?label=%20&message=0009-0002-3991-0098&color=DDF4A2&labelColor=A6CE00&style=flat-square&logo=orcid&logoColor=white" /></a>
 </p>
 
-🎓 M.S. in Genomics at **Université Paris-Saclay**  
-🎓 B.S. in Bioinformatics, minor in Mathematics, from **Lebanese American University**
+🎓 M.S. in Genomics at [**Université Paris-Saclay**](https://www.universite-paris-saclay.fr/)       
+🎓 B.S. in Bioinformatics, minor in Mathematics, from [**Lebanese American University**](https://www.lau.edu.lb/)
 
 My work sits at the intersection of **systems biology**, **comparative genomics**, and **reproducible bioinformatics pipelines**. I like building tools that connect biological networks, multi-omics data, and machine learning toward interpretable models. I'm also interested in **foundation models** for biology.
 
