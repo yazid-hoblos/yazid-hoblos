@@ -1,8 +1,8 @@
 ### <p align="center">Hello, I'm Yazid</p>
 
 <p align="center">
-  <a href="https://github.com/yazid-hoblos?tab=followers"><img alt="followers" title="Follow me on GitHub" src="https://custom-icon-badges.demolab.com/github/followers/yazid-hoblos?color=2DD4BF&labelColor=1A1B35&style=for-the-badge&logo=person-add&label=Follow&logoColor=2DD4BF" /></a>
-  <a href="https://github.com/yazid-hoblos?tab=repositories"><img alt="repositories" title="View my repositories" src="https://img.shields.io/badge/Projects-2DD4BF?style=for-the-badge&logo=github&logoColor=2DD4BF&labelColor=1A1B35" /></a>
+  <a href="https://github.com/yazid-hoblos?tab=followers"><img alt="followers" title="Follow me on GitHub" src="https://custom-icon-badges.demolab.com/github/followers/yazid-hoblos?color=38BDAE&labelColor=1A1B35&style=for-the-badge&logo=person-add&label=Follow&logoColor=38BDAE" /></a>
+  <a href="https://github.com/yazid-hoblos?tab=repositories"><img alt="repositories" title="View my repositories" src="https://img.shields.io/badge/Projects-38BDAE?style=for-the-badge&logo=github&logoColor=38BDAE&labelColor=1A1B35" /></a>
 </p>
 
 <p align="center">
@@ -41,12 +41,12 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 ### Research interests
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Systems%20biology-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="Systems biology" />
-  <img src="https://img.shields.io/badge/Comparative%20genomics-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="Comparative genomics" />
-  <img src="https://img.shields.io/badge/Pangenomics-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="Pangenomics" />
-  <img src="https://img.shields.io/badge/Multi--omics-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="Multi-omics" />
-  <img src="https://img.shields.io/badge/LLMs%20in%20biology-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="LLMs in biology" />
-  <img src="https://img.shields.io/badge/Biological%20foundation%20models-1A1B27?style=flat-square&labelColor=2DD4BF&color=1A1B27" alt="Biological foundation models" />
+  <img src="https://img.shields.io/badge/Systems%20biology-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="Systems biology" />
+  <img src="https://img.shields.io/badge/Comparative%20genomics-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="Comparative genomics" />
+  <img src="https://img.shields.io/badge/Pangenomics-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="Pangenomics" />
+  <img src="https://img.shields.io/badge/Multi--omics-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="Multi-omics" />
+  <img src="https://img.shields.io/badge/LLMs%20in%20biology-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="LLMs in biology" />
+  <img src="https://img.shields.io/badge/Biological%20foundation%20models-1A1B27?style=flat-square&labelColor=38BDAE&color=1A1B27" alt="Biological foundation models" />
 </p>
 
 ### Computational experience
