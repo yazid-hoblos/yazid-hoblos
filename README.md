@@ -79,6 +79,13 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 
 ## Selected Projects
 
+### Bioinformatic Pipeline & Tool Development
+- **[PanGBank-annotator](https://github.com/labgem/PanGBank-annotator)** – Pangenome-scale clustering and annotation for downstream LLM training.
+- **[RNA-Toolkit](https://github.com/yazid-hoblos/RNA-Toolkit)** – RNA modeling and analysis features
+- **[RNA-Fold](https://github.com/yazid-hoblos/RNA-Fold)** – RNA folding evaluation and analysis library
+- **[Solaris](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay)** – Synthetic biology toolkit for heterologous pathway transfer assistance — iGEM 2025 [![View on GitLab](https://img.shields.io/badge/View_on-GitLab-orange?logo=gitlab)](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay) [![iGEM Wiki](https://img.shields.io/badge/iGEM-Wiki-00A19B?labelColor=1A1B35)](https://2025.igem.wiki/evry-paris-saclay/)
+- **[WES-Processing](https://github.com/yazid-hoblos/WES-Processing)** – Processing and analysis pipeline for WES data from Lebanese patients with rare disorders [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink?labelColor=555555)](https://doi.org/10.1371/journal.pone.0327471)
+
 ### Systems & Network Biology
 - **[DiseaseNetAnalysis](https://github.com/yazid-hoblos/DiseaseNetAnalysis)** – Applied network science principles to study diseasome topology and communities
 - **[ENGA](https://github.com/yazid-hoblos/ENGA)** – Designed & implemented a network-based enhancement of the Genetic Algorithm with superior performance [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
@@ -89,13 +96,6 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 - **[PANORAMA](https://github.com/labgem/PANORAMA)** – Robust pangenome-based method for predicting and comparing biological systems across species [![Journal: PLOS Computational Biology](https://img.shields.io/badge/Journal-PLOS%20Computational%20Biology-1675A9?labelColor=555555)](https://doi.org/10.1371/journal.pcbi.1013856)
 - **[PULkit](https://github.com/labgem/PULkit)** – Novel rule-based annotation models for Polysaccharide Utilization Loci (PUL)
 - **[CompGenPipeline](https://github.com/yazid-hoblos/CompGenPipeline)** – Comparative genomics pipelines for automated gene duplication and TE analysis
-
-### Bioinformatic Pipeline & Tool Development
-- **[PanGBank-annotator](https://github.com/labgem/PanGBank-annotator)** – Pangenome-scale clustering and annotation for downstream LLM training.
-- **[RNA-Toolkit](https://github.com/yazid-hoblos/RNA-Toolkit)** – RNA modeling and analysis features
-- **[RNA-Fold](https://github.com/yazid-hoblos/RNA-Fold)** – RNA folding evaluation and analysis library
-- **[Solaris](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay)** – Synthetic biology toolkit for heterologous pathway transfer assistance — iGEM 2025 [![View on GitLab](https://img.shields.io/badge/View_on-GitLab-orange?logo=gitlab)](https://gitlab.igem.org/2025/software-tools/evry-paris-saclay) [![iGEM Wiki](https://img.shields.io/badge/iGEM-Wiki-00A19B?labelColor=1A1B35)](https://2025.igem.wiki/evry-paris-saclay/)
-- **[WES-Processing](https://github.com/yazid-hoblos/WES-Processing)** – Processing and analysis pipeline for WES data from Lebanese patients with rare disorders [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink?labelColor=555555)](https://doi.org/10.1371/journal.pone.0327471)
 
 ### AI & Omics Data Analysis
 - **[Carcinoma-Prediction](https://github.com/yazid-hoblos/Carcinoma-Prediction)** – Transcriptomics-based carcinoma detection using supervised, unsupervised, and tree-based ML
