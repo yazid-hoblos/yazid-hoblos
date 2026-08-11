@@ -63,7 +63,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yazid-hoblos&theme=tokyonight" alt="GitHub stats" width="36.8%" />
-  <img src="https://streak-stats.demolab.com?user=yazid-hoblos&theme=tokyonight&hide_border=true&card_width=495&card_height=195" alt="GitHub streak" width="55%" />
+  <img src="https://streak-stats.demolab.com/?user=yazid-hoblos&theme=tokyonight&hide_border=true&card_width=495&card_height=195&v=2" alt="GitHub streak" width="55%" />
 </p>
 
 <p align="center">
