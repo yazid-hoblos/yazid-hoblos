@@ -11,7 +11,7 @@
   <a href="https://orcid.org/0009-0002-3991-0098"><img alt="ORCID" title="ORCID" src="https://img.shields.io/static/v1?label=%20&message=0009-0002-3991-0098&color=DDF4A2&labelColor=A6CE00&style=flat-square&logo=orcid&logoColor=white" /></a>
 </p>
 
-🎓 M.S. in Genomics at [**Université Paris-Saclay**](https://www.universite-paris-saclay.fr/)       
+🎓 M.S. in Genomics from [**Université Paris-Saclay**](https://www.universite-paris-saclay.fr/)       
 🎓 B.S. in Bioinformatics, minor in Mathematics, from [**Lebanese American University**](https://www.lau.edu.lb/)
 
 My work sits at the intersection of **systems biology**, **comparative genomics**, and **reproducible bioinformatics pipelines**. I like building tools that connect biological networks, multi-omics data, and machine learning toward interpretable models. I'm also interested in **foundation models** for biology.
@@ -70,14 +70,14 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=yazid-hoblos&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20graph%20-%20Last%2030%20days" alt="Contribution graph - Last 30 days" width="96%" />
 </p>
 
-## Publications
+# Publications
 
 - **Panorama: A robust pangenome-based method for predicting and comparing biological systems across species** [![Journal: PLOS Computational Biology](https://img.shields.io/badge/Journal-PLOS%20Computational%20Biology-1675A9?labelColor=555555)](https://doi.org/10.1371/journal.pcbi.1013856)
 - **Genetic carrier frequency in genes involved in inborn errors of immunity in the Lebanese population** [![Journal: Nature Scientific Reports](https://img.shields.io/badge/Journal-Nature%20Scientific%20Reports-E64B3C?labelColor=555555)](https://doi.org/10.1038/s41598-026-60503-z)
 - **WES processing and analysis pipeline for Lebanese patients with rare disorders** [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink?labelColor=555555)](https://doi.org/10.1371/journal.pone.0327471)
 - **ENGA: Network-based enhancement of the Genetic Algorithm** [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
 
-## Selected Projects
+# Selected Projects
 
 ### Bioinformatic Pipeline & Tool Development
 - **[PanGBank-annotator](https://github.com/labgem/PanGBank-annotator)** – Pangenome-scale clustering and annotation for downstream LLM training.
