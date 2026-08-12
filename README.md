@@ -9,6 +9,7 @@
   <a href="https://www.linkedin.com/in/yazid-hoblos"><img alt="LinkedIn" title="LinkedIn" src="assets/linkedin-badge.svg" /></a>
   <a href="mailto:yazidhoblos5@gmail.com"><img alt="Gmail" title="Gmail" src="https://img.shields.io/static/v1?label=%20&message=yazidhoblos5%40gmail.com&color=F8B4AE&labelColor=EA4330&style=flat-square&logo=gmail&logoColor=white" /></a>
   <a href="https://orcid.org/0009-0002-3991-0098"><img alt="ORCID" title="ORCID" src="https://img.shields.io/static/v1?label=%20&message=0009-0002-3991-0098&color=DDF4A2&labelColor=A6CE00&style=flat-square&logo=orcid&logoColor=white" /></a>
+  <a href="https://scholar.google.com/citations?user=wFZ8cMYAAAAJ"><img alt="Google Scholar" title="Google Scholar" src="https://img.shields.io/static/v1?label=%20&message=Yazid%20Hoblos&color=E8F0FE&labelColor=4285F4&style=flat-square&logo=googlescholar&logoColor=white" /></a>
 </p>
 
 🎓 M.S. in Genomics from [**Université Paris-Saclay**](https://www.universite-paris-saclay.fr/)       
