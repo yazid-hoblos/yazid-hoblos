@@ -97,7 +97,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 
 ### Comparative Genomics & Pangenomics
 - **[PANORAMA](https://github.com/labgem/PANORAMA)** – Robust pangenome-based method for predicting and comparing biological systems across species [![Journal: PLOS Computational Biology](https://img.shields.io/badge/Journal-PLOS%20Computational%20Biology-1675A9?labelColor=555555)](https://doi.org/10.1371/journal.pcbi.1013856)
-- **[PULkit](https://github.com/labgem/PULkit)** – Novel rule-based annotation models for Polysaccharide Utilization Loci (PUL)
+- **[PULkit](https://github.com/yazid-hoblos/PULkit)** – Novel rule-based annotation models for Polysaccharide Utilization Loci (PUL)
 - **[CompGenPipeline](https://github.com/yazid-hoblos/CompGenPipeline)** – Comparative genomics pipelines for automated gene duplication and TE analysis
 
 ### AI & Omics Data Analysis
