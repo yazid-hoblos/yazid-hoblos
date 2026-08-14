@@ -92,7 +92,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 ### Systems & Network Biology
 - **[DiseaseNetAnalysis](https://github.com/yazid-hoblos/DiseaseNetAnalysis)** – Applied network science principles to study diseasome topology and communities
 - **[ENGA](https://github.com/yazid-hoblos/ENGA)** – Designed & implemented a network-based enhancement of the Genetic Algorithm with superior performance [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
-- **[BoolNet-Model](https://github.com/yazid-hoblos/BoolNet-Model)** – Modeling and simulating tumor metastasis dynamics with boolean network models
+- **[BoolNet-Model](https://github.com/yazid-hoblos/BoolNet-Metastasis-Model)** – Modeling and simulating tumor metastasis dynamics with boolean network models
 - **[TDA-PPIN](https://github.com/yazid-hoblos/TDA-PPIN)** – Protein complex prediction based on Topological Data Analysis (TDA) in PPI networks
 
 ### Comparative Genomics & Pangenomics
