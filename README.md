@@ -93,7 +93,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 - **[DiseaseNetAnalysis](https://github.com/yazid-hoblos/DiseaseNetAnalysis)** – Applied network science principles to study diseasome topology and communities
 - **[ENGA](https://github.com/yazid-hoblos/ENGA)** – Designed & implemented a network-based enhancement of the Genetic Algorithm with superior performance [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
 - **[BoolNet-Model](https://github.com/yazid-hoblos/BoolNet-Metastasis-Model)** – Modeling and simulating tumor metastasis dynamics with boolean network models
-- **[TDA-PPIN](https://github.com/yazid-hoblos/TDA-PPIN)** – Protein complex prediction based on Topological Data Analysis (TDA) in PPI networks
+- **[TDA-PPIN](https://github.com/mehdimerbah/TDA-PPIN)** – Protein complex prediction based on Topological Data Analysis (TDA) in PPI networks
 
 ### Comparative Genomics & Pangenomics
 - **[PANORAMA](https://github.com/labgem/PANORAMA)** – Robust pangenome-based method for predicting and comparing biological systems across species [![Journal: PLOS Computational Biology](https://img.shields.io/badge/Journal-PLOS%20Computational%20Biology-1675A9?labelColor=555555)](https://doi.org/10.1371/journal.pcbi.1013856)
