@@ -21,8 +21,8 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 
 - **Panorama: A robust pangenome-based method for predicting and comparing biological systems across species** [![Journal: PLOS Computational Biology](https://img.shields.io/badge/Journal-PLOS%20Computational%20Biology-1675A9?labelColor=555555)](https://doi.org/10.1371/journal.pcbi.1013856)
 - **Genetic carrier frequency in genes involved in inborn errors of immunity in the Lebanese population** [![Journal: Nature Scientific Reports](https://img.shields.io/badge/Journal-Nature%20Scientific%20Reports-E64B3C?labelColor=555555)](https://doi.org/10.1038/s41598-026-60503-z)
-- **WES processing and analysis pipeline for Lebanese patients with rare disorders** [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink?labelColor=555555)](https://doi.org/10.1371/journal.pone.0327471)
-- **ENGA: Network-based enhancement of the Genetic Algorithm** [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
+- **Certain vs. uncertain actionable secondary findings in a cohort of 500 Lebanese participants: What to report to the patient?** [![Journal: PLOS One](https://img.shields.io/badge/Journal-PLOS%20One-pink?labelColor=555555)](https://doi.org/10.1371/journal.pone.0327471)
+- **A Scale-free Network-based Genetic Algorithm with Balanced Exploration and Exploitation** [![Preprint: ENGRXiv](https://img.shields.io/badge/Preprint-ENGRXiv-blue?logo=Open%20Access&logoColor=white)](https://engrxiv.org/preprint/view/5690)
 
 ### Skills  
 
