@@ -26,12 +26,15 @@ jobs:
         env:
           GH_USER: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
           set -euo pipefail
 
+          API_TOKEN="${GH_STATS_TOKEN:-$GH_TOKEN}"
+
           graphql() {
             curl -fsSL \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Authorization: Bearer ${API_TOKEN}" \
               -H "Content-Type: application/json" \
               -H "Accept: application/vnd.github+json" \
               -d "$1" \
@@ -52,45 +55,29 @@ jobs:
           total_prs="$(echo "$profile_json" | jq -r '.data.user.pullRequests.totalCount // 0')"
           total_issues="$(echo "$profile_json" | jq -r '.data.user.issues.totalCount // 0')"
 
-          created_year="$(echo "$profile_json" | jq -r '.data.user.createdAt' | cut -c1-4)"
-          current_year="$(date -u +%Y)"
-          now_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          search_headers=(
+            -H "Authorization: Bearer ${API_TOKEN}"
+            -H "Accept: application/vnd.github.cloak-preview+json"
+          )
 
-          total_commits=0
+          commits_meta="$(curl -fsSL "${search_headers[@]}" "https://api.github.com/search/commits?q=author:${GH_USER}&per_page=1")"
+          total_commits="$(echo "$commits_meta" | jq -r '.total_count // 0')"
+
           declare -A contributed_repos=()
+          capped_total="$total_commits"
+          if [ "$capped_total" -gt 1000 ]; then
+            capped_total=1000
+          fi
+          pages=$(( (capped_total + 99) / 100 ))
 
-          contrib_query='query($login:String!, $from:DateTime!, $to:DateTime!){ user(login:$login){ contributionsCollection(from:$from, to:$to){ totalCommitContributions commitContributionsByRepository(maxRepositories:100){ repository { nameWithOwner } } } } }'
-
-          for y in $(seq "$created_year" "$current_year"); do
-            from="${y}-01-01T00:00:00Z"
-            if [ "$y" -eq "$current_year" ]; then
-              to="$now_ts"
-            else
-              to="${y}-12-31T23:59:59Z"
-            fi
-
-            contrib_payload="$(jq -nc \
-              --arg query "$contrib_query" \
-              --arg login "$GH_USER" \
-              --arg from "$from" \
-              --arg to "$to" \
-              '{query:$query, variables:{login:$login, from:$from, to:$to}}')"
-
-            contrib_json="$(graphql "$contrib_payload")"
-
-            if echo "$contrib_json" | jq -e '.errors' > /dev/null; then
-              echo "GraphQL error while reading contribution stats for year ${y}"
-              echo "$contrib_json" | jq '.errors'
-              exit 1
-            fi
-
-            year_commits="$(echo "$contrib_json" | jq -r '.data.user.contributionsCollection.totalCommitContributions // 0')"
-            total_commits=$((total_commits + year_commits))
-
-            while IFS= read -r repo; do
-              [ -n "$repo" ] && contributed_repos["$repo"]=1
-            done < <(echo "$contrib_json" | jq -r '.data.user.contributionsCollection.commitContributionsByRepository[].repository.nameWithOwner // empty')
-          done
+          if [ "$pages" -gt 0 ]; then
+            for page in $(seq 1 "$pages"); do
+              commits_page="$(curl -fsSL "${search_headers[@]}" "https://api.github.com/search/commits?q=author:${GH_USER}&per_page=100&page=${page}")"
+              while IFS= read -r repo; do
+                [ -n "$repo" ] && contributed_repos["$repo"]=1
+              done < <(echo "$commits_page" | jq -r '.items[].repository.full_name // empty')
+            done
+          fi
 
           contributed_to="${#contributed_repos[@]}"
 
