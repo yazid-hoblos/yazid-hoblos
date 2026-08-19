@@ -23,7 +23,7 @@
   <circle class="icon" cx="24" cy="84" r="3.2" />
   <path class="icon" d="M28.8 84h5.8" />
   <text class="label" x="36" y="88">Total Commits:</text>
-  <text class="value" x="140" y="88">296</text>
+  <text class="value" x="140" y="88">1.2k</text>
 
   <circle class="icon" cx="21.8" cy="105.8" r="2.4" />
   <circle class="icon" cx="21.8" cy="116.2" r="2.4" />
@@ -41,7 +41,7 @@
   <path class="icon" d="M20 152.5h8a1.8 1.8 0 0 1 1.8 1.8v8.8H21.8a1.8 1.8 0 0 1-1.8-1.8z" />
   <path class="icon" d="M21.8 154.5h8" />
   <text class="label" x="36" y="160">Contributed to:</text>
-  <text class="value" x="140" y="160">2</text>
+  <text class="value" x="140" y="160">44</text>
 
   <circle class="emblem" cx="280" cy="105" r="46" />
   <g transform="translate(244 69) scale(4.5)">
