@@ -21,7 +21,7 @@
   <circle class="icon" cx="24" cy="84" r="3.2" />
   <path class="icon" d="M28.8 84h5.8" />
   <text class="label" x="36" y="88">Total Commits:</text>
-  <text class="value" x="140" y="88">1.2k</text>
+  <text class="value" x="140" y="88">940</text>
 
   <circle class="icon" cx="21.8" cy="105.8" r="2.4" />
   <circle class="icon" cx="21.8" cy="116.2" r="2.4" />
