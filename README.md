@@ -72,7 +72,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yazid-hoblos&theme=tokyonight" alt="GitHub stats" width="36.8%" />
+  <img src="./profile/stats.svg" alt="GitHub stats" width="36.8%" />
   <img src="./profile/streak.svg" alt="GitHub streak" width="55%" />
 </p>
 

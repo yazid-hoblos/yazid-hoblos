@@ -22,10 +22,14 @@ jobs:
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate stats card
+        run: |
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${{ github.repository_owner }}&theme=tokyonight" -o profile/stats.svg
+
       - name: Commit updated stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/streak.svg
+          git add profile/streak.svg profile/stats.svg
           git commit -m "Update streak stats" || exit 0
           git push
