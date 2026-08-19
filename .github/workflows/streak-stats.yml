@@ -29,36 +29,70 @@ jobs:
         run: |
           set -euo pipefail
 
-          from="2000-01-01T00:00:00Z"
-          to="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          graphql() {
+            curl -fsSL \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -H "Accept: application/vnd.github+json" \
+              -d "$1" \
+              https://api.github.com/graphql
+          }
 
-          query='query($login:String!, $from:DateTime!, $to:DateTime!){ user(login:$login){ repositories(first:100, ownerAffiliations: OWNER, isFork:false){ nodes{ stargazerCount } } pullRequests{ totalCount } issues{ totalCount } contributionsCollection(from:$from, to:$to){ totalCommitContributions totalRepositoriesWithContributedCommits } } }'
+          profile_query='query($login:String!){ user(login:$login){ createdAt repositories(first:100, ownerAffiliations: OWNER, isFork:false){ nodes{ stargazerCount } } pullRequests{ totalCount } issues{ totalCount } } }'
+          profile_payload="$(jq -nc --arg query "$profile_query" --arg login "$GH_USER" '{query:$query, variables:{login:$login}}')"
+          profile_json="$(graphql "$profile_payload")"
 
-          payload="$(jq -nc \
-            --arg query "$query" \
-            --arg login "$GH_USER" \
-            --arg from "$from" \
-            --arg to "$to" \
-            '{query:$query, variables:{login:$login, from:$from, to:$to}}')"
-
-          graph_json="$(curl -fsSL \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -H "Accept: application/vnd.github+json" \
-            -d "$payload" \
-            https://api.github.com/graphql)"
-
-          if echo "$graph_json" | jq -e '.errors' > /dev/null; then
-            echo "GraphQL error while generating stats card"
-            echo "$graph_json" | jq '.errors'
+          if echo "$profile_json" | jq -e '.errors' > /dev/null; then
+            echo "GraphQL error while reading profile stats"
+            echo "$profile_json" | jq '.errors'
             exit 1
           fi
 
-          total_stars="$(echo "$graph_json" | jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0')"
-          total_commits="$(echo "$graph_json" | jq -r '.data.user.contributionsCollection.totalCommitContributions // 0')"
-          total_prs="$(echo "$graph_json" | jq -r '.data.user.pullRequests.totalCount // 0')"
-          total_issues="$(echo "$graph_json" | jq -r '.data.user.issues.totalCount // 0')"
-          contributed_to="$(echo "$graph_json" | jq -r '.data.user.contributionsCollection.totalRepositoriesWithContributedCommits // 0')"
+          total_stars="$(echo "$profile_json" | jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0')"
+          total_prs="$(echo "$profile_json" | jq -r '.data.user.pullRequests.totalCount // 0')"
+          total_issues="$(echo "$profile_json" | jq -r '.data.user.issues.totalCount // 0')"
+
+          created_year="$(echo "$profile_json" | jq -r '.data.user.createdAt' | cut -c1-4)"
+          current_year="$(date -u +%Y)"
+          now_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+          total_commits=0
+          declare -A contributed_repos=()
+
+          contrib_query='query($login:String!, $from:DateTime!, $to:DateTime!){ user(login:$login){ contributionsCollection(from:$from, to:$to){ totalCommitContributions commitContributionsByRepository(maxRepositories:100){ repository { nameWithOwner } } } } }'
+
+          for y in $(seq "$created_year" "$current_year"); do
+            from="${y}-01-01T00:00:00Z"
+            if [ "$y" -eq "$current_year" ]; then
+              to="$now_ts"
+            else
+              to="${y}-12-31T23:59:59Z"
+            fi
+
+            contrib_payload="$(jq -nc \
+              --arg query "$contrib_query" \
+              --arg login "$GH_USER" \
+              --arg from "$from" \
+              --arg to "$to" \
+              '{query:$query, variables:{login:$login, from:$from, to:$to}}')"
+
+            contrib_json="$(graphql "$contrib_payload")"
+
+            if echo "$contrib_json" | jq -e '.errors' > /dev/null; then
+              echo "GraphQL error while reading contribution stats for year ${y}"
+              echo "$contrib_json" | jq '.errors'
+              exit 1
+            fi
+
+            year_commits="$(echo "$contrib_json" | jq -r '.data.user.contributionsCollection.totalCommitContributions // 0')"
+            total_commits=$((total_commits + year_commits))
+
+            while IFS= read -r repo; do
+              [ -n "$repo" ] && contributed_repos["$repo"]=1
+            done < <(echo "$contrib_json" | jq -r '.data.user.contributionsCollection.commitContributionsByRepository[].repository.nameWithOwner // empty')
+          done
+
+          contributed_to="${#contributed_repos[@]}"
 
           format_compact() {
             local n="$1"
