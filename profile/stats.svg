@@ -1,3 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200"><style>* {
-          font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif
-        }</style><g class="gpsc-root"><rect x="1" y="1" rx="5" ry="5" height="99%" width="99.41176470588235%" stroke="#1a1b27" stroke-width="1" fill="#1a1b27" stroke-opacity="1"></rect><text x="30" y="40" class="gpsc-item" style="--gpsc-i: 0; font-size: 22px; fill: red;">ERROR!!!</text><g transform="translate(0,40)"><g transform="translate(30,20)"><text y="40" style="font-size: 14px; fill: red;">Cards are temporarily rate limited.</text><text y="58" style="font-size: 14px; fill: red;">Please try again in a few minutes.</text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="195" viewBox="0 0 340 195" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Stats</title>
+  <desc id="desc">GitHub statistics card for yazid-hoblos</desc>
+  <style>
+    .bg { fill: #1a1b27; }
+    .border { fill: none; stroke: #2f3348; stroke-width: 1; }
+    .title { fill: #70a5fd; font: 700 20px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .label { fill: #70a5fd; font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .value { fill: #38bdae; font: 700 12px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .emblem { fill: #bf91f3; }
+    .mark { fill: #1a1b27; }
+    .icon { stroke: #bf91f3; fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <rect class="bg" x="0.5" y="0.5" width="339" height="194" rx="8" />
+  <rect class="border" x="1" y="1" width="338" height="193" rx="8" />
+
+  <text class="title" x="22" y="36">Stats</text>
+
+  <path class="icon" d="M24 56.8l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6z" />
+  <text class="label" x="36" y="64">Total Stars:</text>
+  <text class="value" x="140" y="64">5</text>
+
+  <circle class="icon" cx="24" cy="84" r="3.2" />
+  <path class="icon" d="M28.8 84h5.8" />
+  <text class="label" x="36" y="88">Total Commits:</text>
+  <text class="value" x="140" y="88">296</text>
+
+  <circle class="icon" cx="21.8" cy="105.8" r="2.4" />
+  <circle class="icon" cx="21.8" cy="116.2" r="2.4" />
+  <circle class="icon" cx="29.5" cy="111" r="2.4" />
+  <path class="icon" d="M21.8 108.2v5.6M24.2 111h2.9" />
+  <text class="label" x="36" y="112">Total PRs:</text>
+  <text class="value" x="140" y="112">3</text>
+
+  <circle class="icon" cx="24" cy="132" r="5" />
+  <path class="icon" d="M24 129.5v3.4" />
+  <circle cx="24" cy="138.2" r="0.9" fill="#bf91f3" />
+  <text class="label" x="36" y="136">Total Issues:</text>
+  <text class="value" x="140" y="136">2</text>
+
+  <path class="icon" d="M20 152.5h8a1.8 1.8 0 0 1 1.8 1.8v8.8H21.8a1.8 1.8 0 0 1-1.8-1.8z" />
+  <path class="icon" d="M21.8 154.5h8" />
+  <text class="label" x="36" y="160">Contributed to:</text>
+  <text class="value" x="140" y="160">2</text>
+
+  <circle class="emblem" cx="280" cy="105" r="46" />
+  <g transform="translate(244 69) scale(4.5)">
+    <path class="mark" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+  </g>
+</svg>
