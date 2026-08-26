@@ -77,7 +77,7 @@ My work sits at the intersection of **systems biology**, **comparative genomics*
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yazid-hoblos&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20graph%20-%20Last%2030%20days" alt="Contribution graph - Last 30 days" width="96%" />
+  <img src="./profile/activity.svg" alt="Contribution graph - Last 30 days" width="96%" />
 </p>
 
 ## Selected Projects
