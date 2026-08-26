@@ -19,14 +19,28 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: ${{ github.repository_owner }}
-          options: user=${{ github.repository_owner }}&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20graph%20-%2030%20days&days=30
-          path: profile/activity.svg
+          options: theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20graph%20-%2030%20days&days=30
+          output_path: profile/activity.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify activity graph
+        run: |
+          set -euo pipefail
+          test -f profile/activity.svg
+          echo "Activity graph generated successfully:"
+          ls -lh profile/activity.svg
 
       - name: Commit activity graph
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add profile/activity.svg
-          git commit -m "Update activity graph" || exit 0
+
+          if git diff --cached --quiet; then
+            echo "No changes to activity graph"
+            exit 0
+          fi
+
+          git commit -m "Update activity graph"
           git push
