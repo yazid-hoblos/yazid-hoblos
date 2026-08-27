@@ -32,6 +32,11 @@ jobs:
 
           API_TOKEN="${GH_STATS_TOKEN:-$GH_TOKEN}"
 
+          if [ -z "$API_TOKEN" ]; then
+            echo "ERROR: No GitHub token available"
+            exit 1
+          fi
+
           graphql() {
             curl -fsSL \
               -H "Authorization: Bearer ${API_TOKEN}" \
@@ -41,81 +46,89 @@ jobs:
               https://api.github.com/graphql
           }
 
-          profile_query='query($login:String!){ user(login:$login){ createdAt repositories(first:100, ownerAffiliations: OWNER, isFork:false){ nodes{ stargazerCount } } pullRequests{ totalCount } issues{ totalCount } } }'
-          profile_payload="$(jq -nc --arg query "$profile_query" --arg login "$GH_USER" '{query:$query, variables:{login:$login}}')"
+          profile_query='
+          query($login:String!, $from:DateTime!, $to:DateTime!) {
+            user(login:$login) {
+              createdAt
+
+              repositories(
+                first:100
+                ownerAffiliations: OWNER
+                isFork:false
+              ) {
+                nodes {
+                  stargazerCount
+                }
+              }
+
+              contributionsCollection(from:$from, to:$to) {
+                totalCommitContributions
+                totalPullRequestContributions
+                totalIssueContributions
+                totalRepositoriesWithContributedCommits
+              }
+            }
+          }'
+
+          current_year="$(date -u +%Y)"
+          now_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+          profile_payload="$(jq -nc \
+            --arg query "$profile_query" \
+            --arg login "$GH_USER" \
+            --arg from "${current_year}-01-01T00:00:00Z" \
+            --arg to "$now_ts" \
+            '{
+              query: $query,
+              variables: {
+                login: $login,
+                from: $from,
+                to: $to
+              }
+            }')"
+
           profile_json="$(graphql "$profile_payload")"
 
-          if echo "$profile_json" | jq -e '.errors' > /dev/null; then
-            echo "GraphQL error while reading profile stats"
+          if echo "$profile_json" | jq -e '.errors' >/dev/null; then
+            echo "GraphQL error:"
             echo "$profile_json" | jq '.errors'
             exit 1
           fi
 
-          total_stars="$(echo "$profile_json" | jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0')"
-          total_prs="$(echo "$profile_json" | jq -r '.data.user.pullRequests.totalCount // 0')"
-          total_issues="$(echo "$profile_json" | jq -r '.data.user.issues.totalCount // 0')"
-
-          created_year="$(echo "$profile_json" | jq -r '.data.user.createdAt' | cut -c1-4)"
-          current_year="$(date -u +%Y)"
-          now_ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-
-          total_commits=0
-          commit_query='query($login:String!, $from:DateTime!, $to:DateTime!){ user(login:$login){ contributionsCollection(from:$from, to:$to){ totalCommitContributions } } }'
-
-          for y in $(seq "$created_year" "$current_year"); do
-            from="${y}-01-01T00:00:00Z"
-            if [ "$y" -eq "$current_year" ]; then
-              to="$now_ts"
-            else
-              to="${y}-12-31T23:59:59Z"
-            fi
-
-            commit_payload="$(jq -nc \
-              --arg query "$commit_query" \
-              --arg login "$GH_USER" \
-              --arg from "$from" \
-              --arg to "$to" \
-              '{query:$query, variables:{login:$login, from:$from, to:$to}}')"
-
-            commit_json="$(graphql "$commit_payload")"
-            if echo "$commit_json" | jq -e '.errors' > /dev/null; then
-              echo "GraphQL error while reading commit stats for year ${y}"
-              echo "$commit_json" | jq '.errors'
-              exit 1
-            fi
-
-            year_commits="$(echo "$commit_json" | jq -r '.data.user.contributionsCollection.totalCommitContributions // 0')"
-            total_commits=$((total_commits + year_commits))
-          done
-
-          search_headers=(
-            -H "Authorization: Bearer ${API_TOKEN}"
-            -H "Accept: application/vnd.github.cloak-preview+json"
-          )
-
-          commits_meta="$(curl -fsSL "${search_headers[@]}" "https://api.github.com/search/commits?q=author:${GH_USER}&per_page=1")"
-          commits_search_total="$(echo "$commits_meta" | jq -r '.total_count // 0')"
-
-          declare -A contributed_repos=()
-          capped_total="$commits_search_total"
-          if [ "$capped_total" -gt 1000 ]; then
-            capped_total=1000
-          fi
-          pages=$(( (capped_total + 99) / 100 ))
-
-          if [ "$pages" -gt 0 ]; then
-            for page in $(seq 1 "$pages"); do
-              commits_page="$(curl -fsSL "${search_headers[@]}" "https://api.github.com/search/commits?q=author:${GH_USER}&per_page=100&page=${page}")"
-              while IFS= read -r repo; do
-                [ -n "$repo" ] && contributed_repos["$repo"]=1
-              done < <(echo "$commits_page" | jq -r '.items[].repository.full_name // empty')
-            done
+          if [ "$(echo "$profile_json" | jq -r '.data.user // empty')" = "" ]; then
+            echo "ERROR: GitHub returned no user data"
+            echo "$profile_json" | jq .
+            exit 1
           fi
 
-          contributed_to="${#contributed_repos[@]}"
+          total_stars="$(
+            echo "$profile_json" |
+              jq '[.data.user.repositories.nodes[].stargazerCount] | add // 0'
+          )"
+
+          total_commits="$(
+            echo "$profile_json" |
+              jq -r '.data.user.contributionsCollection.totalCommitContributions // 0'
+          )"
+
+          total_prs="$(
+            echo "$profile_json" |
+              jq -r '.data.user.contributionsCollection.totalPullRequestContributions // 0'
+          )"
+
+          total_issues="$(
+            echo "$profile_json" |
+              jq -r '.data.user.contributionsCollection.totalIssueContributions // 0'
+          )"
+
+          contributed_to="$(
+            echo "$profile_json" |
+              jq -r '.data.user.contributionsCollection.totalRepositoriesWithContributedCommits // 0'
+          )"
 
           format_compact() {
             local n="$1"
+
             if [ "$n" -ge 1000000 ]; then
               awk -v n="$n" 'BEGIN { printf "%.1fM", n/1000000 }'
             elif [ "$n" -ge 1000 ]; then
@@ -127,10 +140,18 @@ jobs:
 
           total_commits_compact="$(format_compact "$total_commits")"
 
+          echo "GitHub user: $GH_USER"
+          echo "Total stars: $total_stars"
+          echo "Total commits: $total_commits"
+          echo "Total PRs: $total_prs"
+          echo "Total issues: $total_issues"
+          echo "Contributed to: $contributed_to"
+
           cat > profile/stats.svg <<EOF
           <svg xmlns="http://www.w3.org/2000/svg" width="340" height="195" viewBox="0 0 340 195" role="img" aria-labelledby="title desc">
             <title id="title">GitHub Stats</title>
             <desc id="desc">GitHub statistics card for ${GH_USER}</desc>
+
             <style>
               .bg { fill: #1a1b27; }
               .title { fill: #70a5fd; font: 700 20px 'Segoe UI', Ubuntu, Sans-Serif; }
@@ -138,8 +159,15 @@ jobs:
               .value { fill: #38bdae; font: 700 12px 'Segoe UI', Ubuntu, Sans-Serif; }
               .emblem { fill: #bf91f3; }
               .mark { fill: #1a1b27; }
-              .icon { stroke: #bf91f3; fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+              .icon {
+                stroke: #bf91f3;
+                fill: none;
+                stroke-width: 1.4;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              }
             </style>
+
             <rect class="bg" x="0" y="0" width="340" height="195" rx="8" />
 
             <text class="title" x="22" y="36">Stats</text>
@@ -172,16 +200,9 @@ jobs:
             <text class="value" x="140" y="160">${contributed_to}</text>
 
             <circle class="emblem" cx="280" cy="105" r="46" />
+
             <g transform="translate(244 69) scale(4.5)">
               <path class="mark" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
             </g>
           </svg>
           EOF
-
-      - name: Commit updated stats
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/streak.svg profile/stats.svg
-          git commit -m "Update streak stats" || exit 0
-          git push
