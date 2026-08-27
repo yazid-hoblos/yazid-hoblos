@@ -352,4 +352,3 @@ jobs:
           git add profile/streak.svg profile/stats.svg
           git commit -m "Update streak stats" || exit 0
           git push
-          EOF
