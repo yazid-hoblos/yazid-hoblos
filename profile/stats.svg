@@ -47,7 +47,7 @@
   <path class="icon" d="M20 152.5h8a1.8 1.8 0 0 1 1.8 1.8v8.8H21.8a1.8 1.8 0 0 1-1.8-1.8z" />
   <path class="icon" d="M21.8 154.5h8" />
   <text class="label" x="36" y="160">Contributed to:</text>
-  <text class="value" x="140" y="160">44</text>
+  <text class="value" x="140" y="160">43</text>
 
   <circle class="emblem" cx="280" cy="105" r="46" />
 
