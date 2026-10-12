@@ -12,6 +12,10 @@
   <a href="https://scholar.google.com/citations?user=wFZ8cMYAAAAJ"><img alt="Google Scholar" title="Google Scholar" src="https://img.shields.io/static/v1?label=%20&message=Yazid%20Hoblos&color=E8F0FE&labelColor=4285F4&style=flat-square&logo=googlescholar&logoColor=white" /></a>
 </p>
 
+<p align="center">
+  <a href="https://yazid-hoblos.github.io/"><strong>🌐 Visit my website</strong></a>
+</p>
+
 🎓 M.S. in Genomics & AI from [**Université Paris-Saclay**](https://www.universite-paris-saclay.fr/)       
 🎓 B.S. in Bioinformatics, minor in Mathematics, from [**Lebanese American University**](https://www.lau.edu.lb/)
 
